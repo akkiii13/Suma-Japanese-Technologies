@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SJT Electric Vehicles, SJT xEV | ARAI approved EV Retrofit, EV Conversion</title>
+    <meta name="keywords"
+        content="SJT, SJT EV, SJT xEV, SJT xEV Cars, EV Retrofit, EV Conversion, Electric Conversion, SJT Electic Vehicles" />
+    <meta name="description"
+        content="Pune based SJT Electric Vehicles provides 12 models of ARAI approved xEV Cars. EV Retrofit or EV Conversion of Cars are made easily available." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./CSS/INDEX.CSS" rel="stylesheet">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="SJT Electric Vehicles  ">
+    <meta property="og:title" content="SJT Electric Vehicles, SJT xEV | ARAI approved EV Retrofit, EV Conversion">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sjtev.com/IMAGES/SJT_EV_ALTO_DZIRE.JPG">
+    <meta property="og:image:url" content="https://sjtev.com/IMAGES/SJT_EV_ALTO_DZIRE.JPG">
+    <meta property="og:image:secure_url" content="https://sjtev.com/IMAGES/SJT_EV_ALTO_DZIRE.JPG">
+    <meta property="og:url" content="https://www.sjtev.com/">
+    <meta property="og:description"
+        content="Pune based SJT Electric Vehicles provides 12 models of ARAI approved xEV Cars. EV Retrofit or EV Conversion of Cars are made easily available.">
+    <meta property="og:site_name" content="SJT Electric Vehicles">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SJT_EV">
+    <meta name="twitter:url" content="https://www.sjtev.com/">
+    <meta name="twitter:creator" content="@SJT_EV">
+    <meta name="twitter:title" content="SJT Electric Vehicles, SJT xEV | ARAI approved EV Retrofit, EV Conversion">
+    <meta name="twitter:description"
+        content="Pune based SJT Electric Vehicles provides 12 models of ARAI approved xEV Cars. EV Retrofit or EV Conversion of Cars are made easily available.">
+    <meta name="twitter:image" content="https://sjtev.com/IMAGES/SJT_EV_ALTO_DZIRE.JPG">
+    <!-- <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="True" name="HandheldFriendly"> -->
+    <style type='text/css'>
+        body#arial {
+            font-family: "arial";
+        }
+
+        @media only screen and (max-width: 540px) {
+            .footer-mobile-view-padding-left {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .mobile-view-form-start-end-padding {
+                padding-left: 10px;
+                padding-right: 1px;
+            }
+        }
+    </style>
+    <script>
+        var brandsModels = {
+            "Maruti Suzuki": ["Alto", "Swift Dzire", "Celerio", "S-presso", "Zen", "Omni"],
+            "Hyundai": ["i10", "Santro", "EON"],
+            "Renault": ["Kwid"],
+            "Datsun": ["Datsun - Go", "Datsun - Redi-Go"],
+        }
+        var modelYearForSwiftDzire = [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012];
+        var modelYearForOthers = [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011];
+        function makeSubmenu(value) {
+            var selectModel = document.getElementById("selectModel");
+            if (value.length < 1) selectModel.innerHTML = "<option></option>";
+            else {
+                var modelOptions = "";
+                for (var model in brandsModels[value]) {
+                    modelOptions += "<option>" + brandsModels[value][model] + "</option>";
+                }
+                selectModel.innerHTML = modelOptions;
+            }
+        }
+        function selectingYears(value) {
+            var modelYear = document.getElementById("modelYear");
+            var yearOptions = "";
+            if (value == "") {
+                yearOptions += "<option value='' selected='selected' disabled>Choose Model first</option>";
+            }
+            else if (value === "Swift Dzire") {
+                for (let year in modelYearForSwiftDzire) {
+                    yearOptions += `<option value=${modelYearForSwiftDzire[year]}>` + modelYearForSwiftDzire[year] + "</option>";
+                }
+            } else {
+                for (let year in modelYearForOthers) {
+                    yearOptions += `<option value=${modelYearForOthers[year]}>` + modelYearForOthers[year] + "</option>";
+                }
+            }
+            modelYear.innerHTML = yearOptions;
+        }
+    </script>
+</head>
+
+<body id='arial'>
+    <!-- navtab -->
+    <div class="container-fluid" style="height: 40px;"></div>
+    <!-- end navtab -->
+
+    <!-- navbar -->
+    <div class="container-fluid bg-dark" style="height: 45px;">
+        <div class="row">
+            <div class="col-12 pe-5 ">
+                <ul class="nav justify-content-end fs-4">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="HOME.HTML">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Navigate
+                        </a>
+                        <ul class="dropdown-menu fs-5" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="HOME.HTML">Home</a></li>
+                            <li><a class="dropdown-item" href="ABOUT_US.HTML">About Us</a></li>
+                            <li><a class="dropdown-item" href="PRODUCTS.HTML"><b><i>Products</i></b></a></li>
+                            <li><a class="dropdown-item" href="BOOKING.HTML"><b><i>Booking</i></b></a></li>
+                            <li><a class="dropdown-item" href="CONTACT_US.HTML"><b><i>Investors</i></b></a></li>
+                            <li><a class="dropdown-item" href="CAREERS.HTML">Careers</a></li>
+                            <li><a class="dropdown-item" href="FAQ.HTML">FAQ</a></li>
+                            <li><a class="dropdown-item" href="LEGAL.HTML">Legal</a></li>
+                            <li><a class="dropdown-item" href="PRESS_RELEASE.HTML">Press Release</a></li>
+                            <li><a class="dropdown-item" href="CONTACT_US.HTML"><b><i>Contact Us</i></b></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="background-color:#bae7fa83">
+            <div class="col-12 pe-0 py-0">
+                <a class="navbar-brand">
+                    <img src="IMAGES/SJT_EV_xEV_LOGO.JPG" class="m-2 ms-5" height="120px" width="240px" alt="SJT_EV_xEV_LOGO">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <div class="container-fluid py-5 ">
+        <div class="pt-12 px-sm-3 px-md-5 mobile-view-form-start-end-padding">
+            <h3 class="text-center mb-3" style="text-decoration: underline;"><b>SJT EV Conversion Booking</b></h3>
+            <div class="contact-form bg-light mb-4 py-5">
+                <form onsubmit="sendEmail(); reset(); return false">
+                    <div class="row d-flex">
+                        <div class="col-4 text-end">
+                            <label for="fullName">Full name : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="text" id="fullName" placeholder="Full name"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end">
+                            <label for="mobileNumber">Mobile number : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group mb-3">
+                                    <input type="text" class="form-control py-3 ps-1 pe-3 text-center" value="+91"
+                                        id="mobileNumberPrefix" required placeholder="Prefix">
+                                </div>
+                                <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-9 form-group mb-3">
+                                    <input type="text" class="form-control p-3" placeholder="Mobile Number"
+                                        id="mobileNumber" pattern="[6789][0-9]{9}" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="email">Email : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="email" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="ownersAddress">Address : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="text" id="ownersAddress"
+                                    placeholder="Owner's address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="ownersPincode">Pincode : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="text" id="ownersPincode" placeholder="Pincode"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-center my-3" style="text-decoration: underline;"><b>Details of the car you wish to
+                            convert</b></h3>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="selectBrand">Brand : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <select name="brand" id="selectBrand" size="1" class="form-select p-3"
+                                    onchange="makeSubmenu(this.value);" required>
+                                    <option value="" selected="selected" disabled>Choose Brand</option>
+                                    <option value="Maruti Suzuki">Maruti Suzuki</option>
+                                    <option value="Hyundai">Hyundai</option>
+                                    <option value="Renault">Renault</option>
+                                    <option value="Datsun">Datsun</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="selectModel" class="">Model : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <select name="model" id="selectModel" size="1" class="form-select p-3"
+                                    onclick="selectingYears(this.value);" required>
+                                    <option value="" selected="selected" disabled>Choose Brand first</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="modelYear">Model year : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <select class="form-select p-3" aria-label="Default select example"
+                                    name="modelYear" id="modelYear" required>
+                                    <option value="" selected="selected" disabled>Choose Model first</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="transmission">Transmission : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="text" id="transmission" required value="Manual"
+                                    disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="fuel">Fuel : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <select class="form-select p-3" aria-label="Default select example"
+                                    id="fuel">
+                                    <option value="Petrol" selected>Petrol</option>
+                                    <option value="Diesel">Diesel</option>
+                                    <option value="CNG">CNG</option>
+                                    <option value="LPG">LPG</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="carColour">Car colour : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="text" id="carColour" placeholder="Car color">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="regisrationNumber">Registration number : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="text" id="regisrationNumber"
+                                    pattern="[A-Za-z]{2}[0-9]{2}[A-Za-z]{2}[0-9]{4}"
+                                    placeholder="Enter number without space">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="registrationDate">Registration date : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="date" id="registrationDate" required
+                                    placeholder="Registration date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="chassisNumber">Chassis number : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="text" id="chassisNumber"
+                                    placeholder="Chassis number" pattern="^[A-Za-z0-9]{17}$"
+                                    style="text-transform:uppercase">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="motorNumber">Motor number : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="text" id="motorNumber" placeholder="Motor number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="conversionDate">When do you need the conversion?</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="date" id="conversionDate"
+                                    placeholder="Select date of conversion" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="carLocationTown">City / Town of car location : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="text" id="carLocationTown"
+                                    placeholder="City / Town of car location" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="carLocationPincode">Pincode of car location : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <input class="form-control p-3" type="text" id="carLocationPincode"
+                                    placeholder="Pincode of car location">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end top-50">
+                            <label for="otherMessage" style="text-align: right;">Any other information : </label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <textarea class="form-control py-2 px-4" rows="5" id="otherMessage"
+                                    placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-4">
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <button class="btn btn-primary py-32px-4" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <span style="text-decoration: underline;"><b>Thank you. Our sales team will
+                                    contact you soon.</b></span>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <span class="fs-6">For quries, please contact : +91 8799997206</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <div class="container-fluid mt-4">
+        <div class="row pt-5 bg-dark py-5 px-sm-3 px-md-5 footer-mobile-view-padding-left">
+            <div class="col-lg-3 col-md-6 mb-2 text-white">
+                <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                <p class="mb-2 text-white"><i class="fa fa-map-marker-alt mr-3"></i> First floor, Shinde
+                    Complex, Plot11, Shinde Nagar, Pashan-NDA Road, Bavdhan, Pune-411021, Maharashtra, India</p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i> +91 8799997206, 07, 08, 09 </p>
+                <p><i class="fa fa-envelope text-white mr-3"></i> info@sjtev.com</p>
+                <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2"
+                        href="https://www.youtube.com/@SJTElectricVehicles" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2"
+                        href="https://www.linkedin.com/company/sjt-electric-vehicles" target="_blank">
+                        <i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2"
+                        href="https://www.facebook.com/SjtElectricVehicles" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square" href="https://www.instagram.com/sjtelectricvehicles/"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="https://twitter.com/SJT_EV"
+                        target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h4 class="text-uppercase text-light mb-4">Location</h4>
+                <p>
+                    <iframe title=""
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.3626046570903!2d73.77939017589746!3d18.512509169419104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf44dfa0abf5%3A0x182cf7da144247ae!2sSJT%20Electric%20Vehicles!5e0!3m2!1sen!2sin!4v1689163790389!5m2!1sen!2sin"
+                        width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h4 class="text-uppercase text-light mb-4">Useful Links</h4>
+                <div class="d-flex flex-column justify-content-start text-white">
+                    <a class="text-white mb-2" href="HOME.HTML"><i class="fa fa-angle-right mr-2"></i> Home</a>
+                    <a class="text-white mb-2" href="PRODUCTS.HTML"><i class="fa fa-angle-right mr-2"></i> Products</a>
+                    <a class="text-white mb-2" href="BOOKING.HTML"><i class="fa fa-angle-right mr-2"></i> Booking</a>
+                    <a class="text-white mb-2" href="FAQ.HTML"><i class="fa fa-angle-right mr-2"></i> FAQ</a>
+                    <a class="text-white mb-2" href="CONTACT_US.HTML"><i class="fa fa-angle-right mr-2"></i> Contact
+                        Us</a>
+                    <a class="text-white mb-2" href="PRIVACY POLICY.HTML"><i class="fa fa-angle-right mr-2"></i> Privacy
+                        Policy</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2 text-white">
+                <h4 class="text-uppercase text-light mb-4">News Release</h4>
+                <p class="mb-4">We are in the process of creating and sharing regular updates to our stake
+                    holders. This may include our monthly news letter, Regular news releases, New product offers,
+                    Promotions and
+                    similar content.</p>
+                <p>Please Subscribe if you wish to get regular updates.</p>
+                <div class="w-100 mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light border-dark" style="padding: 5px;"
+                            placeholder="">
+                        <div class="input-group-append">
+                            <a href="CONTACT_US.HTML"><button class="btn btn-primary text-uppercase px-3">Sign
+                                    Up</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3 text-center" style="background-color:#bae7fa83">
+            <div class="col">
+                <h6> &copy; 2023 Suma Japanese Technologies. All Rights Reserved.</h6>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "sumajapanesebavdhan@gmail.com",
+                Password: "07C0E298C6CBB12784A9745D1A2D06C3091F",
+                To: 'sales@sjtev.com',
+                From: "sumajapanesebavdhan@gmail.com",
+                Subject: "New Booking Form",
+                Body: "Full Name: " + document.getElementById("fullName").value
+                    + "<br> Mobile No: " + document.getElementById("mobileNumberPrefix").value
+                    + " " + document.getElementById("mobileNumber").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Address: " + document.getElementById("ownersAddress").value
+                    + "<br> Pincode: " + document.getElementById("ownersPincode").value
+                    + "<br> Brand: " + document.getElementById("selectBrand").value
+                    + "<br> Model: " + document.getElementById("selectModel").value
+                    + "<br> Model Year: " + document.getElementById("modelYear").value
+                    + "<br> Transmission: Manual"
+                    + "<br> Fuel: " + document.getElementById("fuel").value
+                    + "<br> Car Colour: " + document.getElementById("carColour").value
+                    + "<br> Regisration Number: " + document.getElementById("regisrationNumber").value
+                    + "<br> Chassis Number: " + document.getElementById("chassisNumber").value
+                    + "<br> Motor Number: " + document.getElementById("motorNumber").value
+                    + "<br> Conversion Date: " + document.getElementById("conversionDate").value
+                    + "<br> Car Location Town: " + document.getElementById("carLocationTown").value
+                    + "<br> Car Location Pincode: " + document.getElementById("carLocationPincode").value
+                    + "<br> Any other information: " + document.getElementById("otherMessage").value
+                    + "<br> Thank you. Our sales team will contact you soon."
+            }).then(
+                message => alert(`Thank you ${document.getElementById("fullName").value}.\nOur sales team will contact you soon.`),
+            );
+        }
+    </script>
+</body>
+
+</html>

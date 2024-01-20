@@ -1,0 +1,23 @@
+/* about us div */
+.home-about-us-remove-all-margin-padding {
+    margin: 0 !important;
+    padding: 1 !important;
+}
+
+.home-about-us-algin-container-to-right-side {
+    margin-right: -12px !important;
+}
+
+.d-none.d-xxl-block .container .row.g-0 .col-xxl-5.user-select-none.position-relative div img,
+.col-xl-5 div img {
+    max-width: 100%;
+    padding: 70px;
+}
+
+.home-about-us-rotate-icon {
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    &:hover {
+        transform: rotateY(360deg);
+    }
+}

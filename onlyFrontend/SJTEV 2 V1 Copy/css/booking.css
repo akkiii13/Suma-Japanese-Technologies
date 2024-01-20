@@ -1,0 +1,10 @@
+@media only screen and (max-width: 540px) {
+    .footer-mobile-view-padding-left {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mobile-view-form-start-end-padding {
+        padding-left: 10px;
+        padding-right: 1px;
+    }
+}

@@ -1,0 +1,34 @@
+#spring:
+#  cloud:
+#    gateway:
+#      globalcors:
+#        cors-configurations:
+#          '[/**]':
+#            allowedOrigins: "https://docs.spring.io"
+#            allowedMethods:
+#            - GET
+#            - POST
+#            - PUT
+#            - DELETE
+#            - OPTIONS
+#            allowedHeaders: '*'
+#            maxAge: 30
+
+
+
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#      - id: cors_route
+#        uri: https://example.org
+#        predicates:
+#        - Path=/service/**
+#        metadata:
+#          cors
+#            allowedOrigins: '*'
+#            allowedMethods:
+#            - GET
+#            - POST
+#            allowedHeaders: '*'
+#            maxAge: 30

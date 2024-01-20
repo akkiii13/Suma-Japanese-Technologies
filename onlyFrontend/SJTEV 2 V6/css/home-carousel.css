@@ -1,0 +1,96 @@
+.carousel-item {
+    transition: transform 2s ease, opacity 0.5s ease-out;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-inner {
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    max-height: 700px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+}
+
+.carouselBookNow {
+    background:
+        linear-gradient(-45deg, #000 40%, #fff 0 60%, #000 0) right/300% 100% no-repeat,
+        linear-gradient(-45deg, #0000 40%, #000 0 60%, #0000 0) right/300% 100% no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.8s;
+    z-index: 11;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #7AB629;
+}
+
+.carouselBookNow:hover {
+    background-color: #000000;
+    color: #ffffff;
+    background-position: left;
+}
+
+.cssanimation1,
+.cssanimation2,
+.cssanimation3,
+.cssanimation4,
+.cssanimation5 {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+.cssanimation1.sequence,
+.cssanimation2.sequence,
+.cssanimation3.sequence,
+.cssanimation4.sequence,
+.cssanimation5.sequence {
+    animation-delay: 0.25s;
+    animation-name: fadeInBottom;
+    animation-fill-mode: forwards;
+}
+
+.cssanimation2.sequence {
+    animation-delay: 0.5s;
+}
+
+.cssanimation3.sequence {
+    animation-delay: 1s;
+}
+
+.cssanimation4.sequence {
+    animation-delay: 1.5s;
+}
+
+.cssanimation5.sequence {
+    animation-delay: 2s;
+}
+
+@keyframes fadeInBottom {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.sequence {
+    animation-name: fadeInBottom;
+}

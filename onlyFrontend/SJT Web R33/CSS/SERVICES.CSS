@@ -1,0 +1,29 @@
+.service-item {
+    height: 320px;
+    background: var(--light);
+    transition: .5s;
+}
+
+.service-item:hover,
+.service-item.active {
+    background: var(--secondary);
+}
+
+.service-item h1,
+.service-item h4 {
+    transition: .5s;
+}
+
+.service-item:hover h1,
+.service-item.active h1 {
+    color: var(--dark) !important;
+}
+
+.service-item:hover h4,
+.service-item.active h4 {
+    color: var(--light);
+}
+
+.container-fluid {
+    padding-left: 0px;
+}

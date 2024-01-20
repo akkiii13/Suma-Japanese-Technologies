@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="#" th:action="@{/bookingData}" th:object="${user}" method="post">
+		
+		<label for="startDate">Start Date</label>
+		<input type="date" th:field="*{startDate}" id="startDate" placeholder="Start Date">
+		<span th:if="${#fields.hasErrors('startDate')}" th:errors="startDate"></span>
+		
+		<label for="endDate">End Date</label>
+		<input type="date" th:field="*{endDate}" id="endDate" placeholder="End Date">
+		<span th:if="${#fields.hasErrors('endDate')}" th:errors="endDate"></span>
+		
+		<input type="submit" value="Add User">
+
+	</form>
+
+</body>
+</html>
