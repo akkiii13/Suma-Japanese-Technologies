@@ -1,0 +1,5 @@
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+    color: #5E5E5E;
+}

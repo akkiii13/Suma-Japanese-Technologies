@@ -1,0 +1,59 @@
+.home-blog-image-div {
+  max-width: auto;
+  max-height: 700px;
+  overflow: hidden;
+  z-index: 10 !important;
+}
+
+.home-blog-image {
+  transition: 0.5s ease;
+  object-fit: contain;
+}
+
+.home-blog-image:hover {
+  transform: scale(1.1);
+}
+
+.home-blog-title {
+  color: #FFFFFF;
+}
+
+.home-blog-title:hover {
+  color: #7AB629;
+}
+
+.home-blog-user-name {
+  color: #FFFFFF;
+}
+
+.home-blog-user-name:hover {
+  color: #7AB629;
+}
+
+.home-blog-comments {
+  color: #FFFFFF;
+}
+
+.home-blog-comments:hover {
+  color: #7AB629;
+}
+
+#home-blog-owl.owl-carousel.owl-loaded .owl-nav {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+#home-blog-owl.owl-carousel.owl-loaded .owl-nav .owl-prev,
+#home-blog-owl.owl-carousel.owl-loaded .owl-nav .owl-next {
+  display: inline-block;
+  color: #7AB629;
+
+  &:hover {
+    background-color: #7AB629;
+    color: #FFFFFF;
+  }
+}
+
+#home-blog-owl.owl-carousel.owl-loaded .owl-stage-outer .owl-stage .owl-item {
+  padding: 0px 15px;
+}

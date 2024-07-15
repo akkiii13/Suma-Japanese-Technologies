@@ -1,0 +1,22 @@
+#companyName {
+    font-size: large;
+  color: #7ab629;
+  text-decoration: underline;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.companyLogo {
+    align-items: flex-end;
+    display: flex;
+    height: 80px;
+    width: 160px;
+}
+
+#contactInfo {
+    color: #000000 !important;
+}
+
+#emailAddress {
+    margin-left: 50px;
+}

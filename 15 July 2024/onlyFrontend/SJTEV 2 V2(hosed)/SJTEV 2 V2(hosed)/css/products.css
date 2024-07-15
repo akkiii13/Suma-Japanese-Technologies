@@ -1,0 +1,24 @@
+.home-service-card-image-div {
+    overflow: visible;
+}
+
+.home-service-card-image-div:hover {
+    overflow: visible;
+}
+
+.home-service-card-image {
+    transition: 0.5s ease;
+}
+
+.home-service-card-image:hover {
+    transform: scale(1.1);
+}
+
+
+.home-service-card-footer {
+    color: #000000;
+}
+
+.home-service-card-footer:hover {
+    color: #7AB629;
+}
